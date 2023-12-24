@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" styleClass="bodybg" stylesheets="@background.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.stickheroapplication.SceneController">
+   <Rectangle arcHeight="5.0" arcWidth="5.0" height="51.0" layoutX="15.0" layoutY="14.0" stroke="#730e0e" strokeType="INSIDE" width="53.0">
+      <fill>
+         <LinearGradient endX="1.0" endY="1.0">
+            <stops>
+               <Stop>
+                  <color>
+                     <Color />
+                  </color>
+               </Stop>
+               <Stop offset="0.006729475100942127">
+                  <color>
+                     <Color red="1.0" green="1.0" blue="1.0" />
+                  </color>
+               </Stop>
+               <Stop offset="0.5544660735974787">
+                  <color>
+                     <Color red="0.48036453127861023" green="0.8736842274665833" blue="0.15855750441551208" />
+                  </color>
+               </Stop>
+               <Stop offset="1.0">
+                  <color>
+                     <Color green="0.6333333253860474" blue="1.0" />
+                  </color>
+               </Stop>
+            </stops>
+         </LinearGradient>
+      </fill>
+   </Rectangle>
+   <Label layoutX="204.0" layoutY="33.0" text="STICK" textAlignment="CENTER">
+      <font>
+         <Font name="Laced Days" size="70.0" />
+      </font>
+      <textFill>
+         <LinearGradient endX="1.0" endY="1.0">
+            <stops>
+               <Stop>
+                  <color>
+                     <Color />
+                  </color>
+               </Stop>
+               <Stop offset="0.006729475100942127">
+                  <color>
+                     <Color red="1.0" green="1.0" blue="1.0" />
+                  </color>
+               </Stop>
+               <Stop offset="0.5544660735974787">
+                  <color>
+                     <Color red="0.48036453127861023" green="0.8736842274665833" blue="0.15855750441551208" />
+                  </color>
+               </Stop>
+               <Stop offset="1.0">
+                  <color>
+                     <Color green="0.6333333253860474" blue="1.0" />
+                  </color>
+               </Stop>
+            </stops>
+         </LinearGradient>
+      </textFill>
+   </Label>
+   <Label layoutX="204.0" layoutY="85.0" text="HERO">
+      <font>
+         <Font name="Laced Days" size="70.0" />
+      </font>
+      <textFill>
+         <LinearGradient endX="1.0" endY="1.0">
+            <stops>
+               <Stop>
+                  <color>
+                     <Color />
+                  </color>
+               </Stop>
+               <Stop offset="0.006711409395973154">
+                  <color>
+                     <Color red="0.800000011920929" green="0.5430617332458496" blue="0.44148147106170654" />
+                  </color>
+               </Stop>
+               <Stop offset="0.7186652660604665">
+                  <color>
+                     <Color red="0.9166666865348816" green="1.0" />
+                  </color>
+               </Stop>
+               <Stop offset="1.0">
+                  <color>
+                     <Color red="0.21574074029922485" green="1.0" blue="0.14444445073604584" />
+                  </color>
+               </Stop>
+            </stops>
+         </LinearGradient>
+      </textFill>
+   </Label>
+   <Button layoutX="250.0" layoutY="227.0" mnemonicParsing="false" onAction="#switchtoGameScreen" stylesheets="@playbutton.css" text="PLAY">
+      <font>
+         <Font name="Bookshelf Symbol 7" size="25.0" />
+      </font>
+   </Button>
+   <ToggleButton fx:id="muteButton" layoutX="14.0" layoutY="27.0" onAction="#playMusic" styleClass="button" stylesheets="@soundbutton.css">
+      <font>
+         <Font size="20.0" />
+      </font>
+   </ToggleButton>
+   <ImageView fx:id="muteImageView" fitHeight="38.0" fitWidth="37.0" layoutX="23.0" layoutY="22.0" onMouseClicked="#playMusic">
+      <image>
+         <Image url="@images/SoundOn.png" />
+      </image>
+   </ImageView>
+   <Rectangle arcHeight="5.0" arcWidth="5.0" height="51.0" layoutX="525.0" layoutY="15.0" stroke="#730e0e" strokeType="INSIDE" width="53.0">
+      <fill>
+         <LinearGradient endX="1.0" endY="1.0">
+            <stops>
+               <Stop>
+                  <color>
+                     <Color />
+                  </color>
+               </Stop>
+               <Stop offset="0.006729475100942127">
+                  <color>
+                     <Color red="1.0" green="1.0" blue="1.0" />
+                  </color>
+               </Stop>
+               <Stop offset="0.5544660735974787">
+                  <color>
+                     <Color red="0.48036453127861023" green="0.8736842274665833" blue="0.15855750441551208" />
+                  </color>
+               </Stop>
+               <Stop offset="1.0">
+                  <color>
+                     <Color green="0.6333333253860474" blue="1.0" />
+                  </color>
+               </Stop>
+            </stops>
+         </LinearGradient>
+      </fill>
+   </Rectangle>
+   <Button layoutX="534.0" layoutY="28.0" mnemonicParsing="false" onAction="#exitGame" onMouseClicked="#exitGame" stylesheets="@exitbutton.css" text="Exit" />
+
+
+</AnchorPane>
